@@ -9,11 +9,11 @@ import com.bumptech.glide.load.data.DataFetcher;
 import java.io.File;
 import java.io.InputStream;
 
-public class Base64DataFetcher implements DataFetcher<InputStream> {
+public class AESDataFetcher implements DataFetcher<InputStream> {
 
     private final String mFilePath;
 
-    Base64DataFetcher(String model) {
+    AESDataFetcher(String model) {
         this.mFilePath = model;
     }
 

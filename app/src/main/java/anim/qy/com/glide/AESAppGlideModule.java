@@ -8,12 +8,11 @@ import com.bumptech.glide.annotation.GlideModule;
 import com.bumptech.glide.module.AppGlideModule;
 
 import java.io.InputStream;
-import java.nio.ByteBuffer;
 
 @GlideModule
-public class MyAppGlideModule extends AppGlideModule { 
+public class AESAppGlideModule extends AppGlideModule {
   @Override
   public void registerComponents(Context context, Glide glide, Registry registry) {
-    registry.prepend(String.class, InputStream.class, new Base64ModelLoaderFactory());
+    registry.prepend(String.class, InputStream.class, new AESModelLoaderFactory());
   }
 }
